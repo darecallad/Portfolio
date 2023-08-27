@@ -142,6 +142,14 @@ section {
   text-align: center;
 }
 
+#projects a {
+  text-decoration: none;
+  color: inherit;
+}
+#projects a:hover {
+  color: #0056b3; /* Change link color on hover */
+}
+
 .project {
   margin-bottom: 40px; /* Add some spacing between project cards */
   padding: 20px;
