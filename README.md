@@ -1,4 +1,3 @@
-# Portfolio
 
 Portfolio Website README
 =======================
