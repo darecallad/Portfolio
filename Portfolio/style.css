@@ -15,86 +15,6 @@ body {
   color: #333;
 }
 
-/* Header styles */
-header {
-  background-color: #fff;
-  padding: 20px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative; /* Add position relative to header */
-}
-
-nav {
-  position: absolute;
-  top: 11px; /* Position at the top within the header */
-  right: 20px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin: 0 15px; /* Increase margin for more spacing */
-}
-
-nav a {
-  text-decoration: none;
-  color: #555;
-  font-weight: bold; /* Add bold font weight */
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #333;
-}
-
-/* Add hover effect to navigation items */
-nav li:hover {
-  transform: scale(1.1); /* Add scale effect on hover */
-}
-
-/* Section styles */
-section {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.about-section {
-  padding: 80px 0; /* Increased padding for more spacing */
-}
-
-.about-content {
-  max-width: 800px; /* Limit the width for better readability */
-  margin: 0 auto; /* Center align the content */
-  text-align: left; /* Align text to the left */
-}
-
-.about-text {
-  margin: 20px 0; /* Add spacing between paragraphs */
-  font-size: 1.2rem;
-  line-height: 1.6; /* Improve line spacing for better readability */
-}
-
-/* Button styles */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-
 /* Typography styles */
 h1,
 h2 {
@@ -124,19 +44,146 @@ p {
   text-indent: 2em; /* Adjust the value to control the amount of indentation */
 }
 
+/* Header styles */
+header {
+  background-color: #f7f7f7; /* Light gray background */
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Navigation styles */
+nav {
+  position: absolute;
+  top: 11px; /* Position at the top within the header */
+  right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px; /* Increase margin for more spacing */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Dark gray text */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1747ca;
+}
+
+nav li:hover {
+  transform: scale(1.1); /* Add scale effect on hover */
+}
+
+/* Section styles */
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Hero section styles */
+#hero {
+  padding: 100px 0 0 0; /* Increase padding for more spacing */
+}
+
+#hero h1 {
+  font-size: 3rem; /* Increase font size */
+  margin-bottom: 20px; /* Add spacing between heading and content */
+}
+
+/* Add some shadow to the text for a subtle effect */
+#hero h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-section {
+  padding: 60px 0; /* Increased padding for more spacing */
+}
+
+.about-content {
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center align the content */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  padding: 10px;
+  font-size: 1.2rem;
+  line-height: 1.6; /* Improve line spacing for better readability */
+}
+
+/* Add a slight top margin to the first paragraph */
+.about-text:first-child {
+  margin-top: 0;
+}
+
+/* Add hover effect to paragraphs */
+.about-text:hover {
+  background-color: #f3f3f3;
+}
+
+/* Projects section styles */
+#projects {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 40px; /* Add some spacing between project cards */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.project:hover {
+  transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Add spacing below the project image */
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
 /*Cpmtact section */
 .contact-section {
   padding: 80px 0; /* Increased padding for more spacing */
 }
 
 .contact-details {
-  margin-top: 20px; /* Add spacing between headings and details */
-  text-align: center;
+  margin-top: 30px;
 }
 
 .contact-details p {
-  margin: 10px 0; /* Add spacing between paragraphs */
+  margin: 15px 0; /* Adjust spacing between paragraphs */
   font-size: 1.2rem;
+  color: #333;
 }
 
 .contact-details a {
@@ -149,33 +196,46 @@ p {
   color: #0056b3;
 }
 
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
-  nav {
-    position: absolute;
-    top: 0; /* Position at the top within the header */
-    right: 20px;
-  }
-
-  nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav li {
-    margin: 0 10px;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: #555;
-    transition: color 0.3s ease;
-  }
-
-  nav a:hover {
-    color: #333;
-  }
 }
