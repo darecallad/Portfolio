@@ -8,20 +8,24 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <nav class="nav">
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="#about">About me</a></li>
+          <li class="nav__item"><a href="#projects">Projects</a></li>
+          <li class="nav__item"><a href="#features">Features</a></li>
+          <li class="nav__item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section id="hero">
-      <h1>Chung An (Johnson) Chen</h1>
+    <section class="hero">
+      <header class="block__header">
+        <h1>Chung An (Johnson) Chen</h1>
+      </header>
     </section>
-    <section id="about" class="about-section">
-      <h2>About Me</h2>
+    <section class="about" id="about">
+      <header class="block__header">
+        <h2>About Me</h2>
+      </header>
       <div class="about-content">
         <p class="about-text">
           Experienced Front-End Software Engineer with over 4 years of
@@ -35,60 +39,83 @@
         </p>
       </div>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <a
-        href="https://darecallad.github.io/scroll-animation/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div class="project">
-          <img src="images/project1.png" alt="Project 1" />
-          <h3>Scroll Animation</h3>
-          <p>
-            This project draws inspiration from the trend of scroll animations
-            in modern web design. By creating your own animations, you can
-            enhance your skills and create captivating user interfaces.
-          </p>
-        </div>
-      </a>
-      <!-- Add more project divs as needed -->
-      <a
-        href="https://github.com/darecallad/NextJs13featureProject"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div class="project">
-          <img src="images/project2.png" alt="Project 2" />
-          <h3>Next.js 13 Feature Project</h3>
-          <p>
-            This repository contains a Todo application built using the latest
-            features of Next.js 13. The project is designed to demonstrate the
-            capabilities of Next.js 13 by utilizing its features to build a
-            functional Todo application.
-          </p>
-        </div>
-      </a>
-      <!-- Add more project divs as needed -->
-      <a
-        href="https://darecallad.github.io/responsiveWeb/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div class="project">
-          <img src="images/project3.png" alt="Project 3" />
-          <h3>Responsive Website</h3>
-          <p>
-            This project is a simple landing page for a laptop product. It is
-            fully responsive and includes animations, a product introduction,
-            and call-to-action buttons.
-          </p>
-        </div>
-      </a>
+    <section class="projects block" id="projects">
+      <header class="block__header">
+        <h2>Personal Projects</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <a
+          href="https://darecallad.github.io/responsiveProject1/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="project">
+            <img src="images/project1.png" alt="Project 1" />
+            <h3>Responsive Project 1</h3>
+            <p>
+              This repository contains a responsive web design template that
+              showcases modern web practices and design patterns. The template
+              is built with flexibility in mind, ensuring that it looks and
+              functions well on a variety of devices and screen sizes.
+            </p>
+          </div>
+        </a>
+        <!-- Add more project divs as needed -->
+        <a
+          href="https://darecallad.github.io/responsiveWeb/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="project">
+            <img src="images/project3.png" alt="Project 3" />
+            <h3>Responsive Project 2</h3>
+            <p>
+              This project is a simple landing page for a laptop product. It is
+              fully responsive and includes animations, a product introduction,
+              and call-to-action buttons.
+            </p>
+          </div>
+        </a>
+        <a
+          href="https://darecallad.github.io/scroll-animation/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="project">
+            <img src="images/project4.png" alt="Project 4" />
+            <h3>Scroll Animation</h3>
+            <p>
+              This project draws inspiration from the trend of scroll animations
+              in modern web design. By creating your own animations, you can
+              enhance your skills and create captivating user interfaces.
+            </p>
+          </div>
+        </a>
+        <!-- Add more project divs as needed -->
+        <a
+          href="https://github.com/darecallad/NextJs13featureProject"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="project">
+            <img src="images/project2.png" alt="Project 2" />
+            <h3>Next.js 13 Feature Project</h3>
+            <p>
+              This repository contains a Todo application built using the latest
+              features of Next.js 13. The project is designed to demonstrate the
+              capabilities of Next.js 13 by utilizing its features to build a
+              functional Todo application.
+            </p>
+          </div>
+        </a>
+        <!-- Add more project divs as needed -->
+      </div>
     </section>
-    <section id="features" class="feature-section">
-      <h2>Features Testing</h2>
-      <div class="feature-details">
+    <section class="features block" id="features">
+      <header class="block__header">
+        <h2>Features Testing</h2>
+      </header>
+      <div class="container grid grid--1x2">
         <a
           href="https://github.com/darecallad/CSS-Anchor"
           target="_blank"
@@ -105,7 +132,7 @@
         </a>
       </div>
     </section>
-    <section id="contact" class="contact-section">
+    <section class="contact" id="contact">
       <h2>Contact</h2>
       <div class="contact-details">
         <p>

@@ -1,3 +1,13 @@
+:root {
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Reset some default browser styles */
 body,
 h1,
@@ -8,32 +18,42 @@ p {
   padding: 0;
 }
 
+html {
+  /* 10 px*/
+  font-size: 62.5%;
+}
+
 /* Global styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.5;
   background-color: #f7f7f7;
   color: #333;
 }
 
 /* Typography styles */
 h1,
-h2 {
-  font-weight: bold;
+h2,
+h3 {
+  margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
+  margin-top: 0;
 }
 
 .left-align {
@@ -44,46 +64,108 @@ p {
   text-indent: 2em; /* Adjust the value to control the amount of indentation */
 }
 
+/*Links*/
+a {
+  text-decoration: none;
+}
+
+/* Blocks */
+
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 3rem;
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Container */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* grids */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* Header styles */
 header {
   background-color: #f7f7f7; /* Light gray background */
-  padding: 20px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
   position: relative;
+  text-shadow: var(--text-shadow);
 }
 
 /* Navigation styles */
-nav {
-  position: absolute;
-  top: 11px; /* Position at the top within the header */
-  right: 20px;
-}
 
-nav ul {
-  list-style: none;
+.nav {
+  background: #000;
   display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.nav__list {
+  width: 100%;
   margin: 0;
-  padding: 0;
 }
 
-nav li {
-  margin: 0 15px; /* Increase margin for more spacing */
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
 }
 
-nav a {
-  text-decoration: none;
-  color: #333; /* Dark gray text */
-  font-weight: bold;
-  transition: color 0.3s ease;
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+.nav__item > a:hover {
+  color: #fff;
 }
 
-nav a:hover {
-  color: #1747ca;
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .nav__item {
+    border: 0;
+  }
 }
 
-nav li:hover {
-  transform: scale(1.1); /* Add scale effect on hover */
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Section styles */
@@ -93,21 +175,12 @@ section {
 }
 
 /* Hero section styles */
-#hero {
+.hero {
   padding: 100px 0 0 0; /* Increase padding for more spacing */
+  margin-bottom: 20px;
 }
 
-#hero h1 {
-  font-size: 3rem; /* Increase font size */
-  margin-bottom: 20px; /* Add spacing between heading and content */
-}
-
-/* Add some shadow to the text for a subtle effect */
-#hero h1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.about-section {
+.about {
   padding: 60px 0; /* Increased padding for more spacing */
 }
 
@@ -122,7 +195,7 @@ section {
 
 .about-text {
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 1.6; /* Improve line spacing for better readability */
 }
 
@@ -137,19 +210,14 @@ section {
 }
 
 /* Projects, Features section styles */
-#projects,
-#features {
-  padding: 80px 0;
-  text-align: center;
-}
 
-#projects a,
-#features a {
-  text-decoration: none;
+.projects a,
+.features a {
   color: inherit;
 }
-#projects a:hover,
-#features a:hover {
+
+.projects a:hover,
+.features a:hover {
   color: #0056b3; /* Change link color on hover */
 }
 
@@ -174,21 +242,16 @@ section {
   margin-bottom: 10px; /* Add spacing below the project image */
 }
 
-.project h3,
-.feature h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
 .project p,
 .feature p {
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   line-height: 1.6;
+  opacity: 0.6;
   color: #555;
 }
 
 /*Cpmtact section */
-.contact-section {
+.contact {
   padding: 80px 0; /* Increased padding for more spacing */
 }
 
@@ -198,13 +261,12 @@ section {
 
 .contact-details p {
   margin: 15px 0; /* Adjust spacing between paragraphs */
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   color: #333;
 }
 
 .contact-details a {
   color: #007bff;
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 
