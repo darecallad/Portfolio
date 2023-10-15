@@ -1,355 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Johnson's Portfolio</title>
+    <link rel="stylesheet" href="../docs/css/normalize.css" />
+    <link rel="stylesheet" href="../docs/css/style.css" />
+    <title>Chung An's Portfolio</title>
   </head>
+
   <body>
-    <header>
-      <nav class="nav">
-        <ul class="list nav__list">
-          <li class="nav__item"><a href="#projects">Projects</a></li>
-          <li class="nav__item"><a href="#features">Features</a></li>
-          <li class="nav__item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="hero">
-      <header class="block__header">
-        <h1>Chung An (Johnson) Chen</h1>
-      </header>
+    <!-- First Intro Section -->
+    <section class="intro" id="home">
+      <div class="dot-container"></div>
+      <p>Hello, I'm <span class="intro_important"> Chung An Chen. </span></p>
+      <p>I'm a Front-end web developer.</p>
+      <a href="#about" class="view-work-btn">View my work </a>
     </section>
 
-    <main>
-      <section class="projects block" id="projects">
-        <header class="block__header">
-          <h2>Personal Projects</h2>
-        </header>
-        <div class="container">
-          <!-- Project 1 -->
-          <div class="project">
-            <img src="images/project.png" alt="Project" />
-            <a
-              href="https://www.sunnychildcare.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Child Care project</h3>
-            </a>
-            <ul>
-              <li><strong>Project Name:</strong> SunnyChildCare</li>
-              <li>
-                <strong>Description:</strong> Hey there! I had the awesome
-                opportunity to build the web structure for SunnyChildCare. It's
-                a platform designed specifically for child care centers, making
-                it super user-friendly for both the staff and parents.
-              </li>
-              <li>
-                <strong>Tech & Tools:</strong> I got my hands dirty with some
-                cool tools and tech for this one. I used Html5, CSS, and JS for
-                the frontend magic. Webpack helped me bundle everything
-                together, and I managed the code with Git. On the backend, I
-                used Node.js. Oh, and I can't forget Photoshop – it was super
-                handy for some of the design elements.
-              </li>
-              <li>
-                <strong>Key Features & Highlights:</strong> One of the things
-                I'm super proud of is the responsive design. No matter what
-                device you're on, the site looks great. I also added a feature
-                where customers can shoot over a form straight to a designated
-                email – super convenient. And to make sure everyone knows where
-                the center is, I integrated Google Maps to pinpoint the school's
-                exact location.
-              </li>
-              <li>
-                <strong>Challenges & Solutions:</strong> Ran into a bit of a
-                hiccup with cross-domain issues. But no worries! With a combo of
-                cors and express, I got that sorted out in no time.
-              </li>
-              <li>
-                <strong>Project Link & Code:</strong> Curious to see it live?
-                Check it out at
-                <a href="http://www.sunnychildcare.com"
-                  >www.sunnychildcare.com</a
-                >.
-              </li>
-              <li>
-                <strong>Feedback & Results:</strong> Since we launched, there's
-                been a 30% uptick in user registrations. Pretty neat, right?
-              </li>
-              <li>
-                <strong>What I Learned:</strong> One of the coolest things I
-                picked up from this project was the art of color selection,
-                especially in the realm of early childhood education. It's
-                fascinating how different sectors have their own vibe and color
-                palettes.
-              </li>
-            </ul>
-          </div>
-          <!-- Project 2 -->
-          <div class="project">
-            <img src="images/project1.png" alt="Project 1" />
-            <a
-              href="https://darecallad.github.io/responsiveProject1/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Responsive Web Template (OOP)</h3>
-            </a>
-            <ul>
-              <li><strong>Project Name:</strong> Responsive Web Page</li>
-              <li>
-                <strong>Description:</strong> Hey! I whipped up this design
-                template for a responsive web page. The cool part? I used the
-                principles of OOP to craft this beauty.
-              </li>
-              <li>
-                <strong>Tech & Tools:</strong> I rolled up my sleeves and dived
-                into HTML, CSS, and JS to bring this responsive web page to
-                life.
-              </li>
-              <li>
-                <strong>Key Features & Highlights:</strong> I'm super stoked
-                about the animations and the variety of component templates I've
-                included. It's like a Swiss Army knife for web design!
-              </li>
-              <li>
-                <strong>Challenges & Solutions:</strong> Merging components was
-                a tad tricky, especially with some pesky padding and margin
-                issues. But, thanks to the Chrome dev tool, I ironed out those
-                wrinkles in no time.
-              </li>
-              <li>
-                <strong>Project Link & Code:</strong> Wanna see it in action?
-                Take a peek at my template right here:
-                <a
-                  href="https://darecallad.github.io/responsiveProject1/"
-                  target="_blank"
-                  >www.darecallad.github.io/responsiveProject1/</a
-                >.
-              </li>
-              <li>
-                <strong>What I Learned:</strong> The big takeaway? Using OOP to
-                design reusable components is a game-changer. It's like having a
-                secret weapon that saves heaps of time on future designs.
-              </li>
-            </ul>
-          </div>
-          <!-- Project 3 -->
-          <div class="project">
-            <img src="images/project3.png" alt="Project 3" />
-            <a
-              href="https://darecallad.github.io/responsiveWeb/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Responsive Web Template</h3>
-            </a>
-            <ul>
-              <li><strong>Project Name:</strong> Responsive Web Page</li>
-              <li>
-                <strong>Description:</strong> Hey there! I crafted this sleek
-                and simple template for a responsive web page. The goal? To
-                showcase a clean and tidy style that's easy on the eyes.
-              </li>
-              <li>
-                <strong>Tech & Tools:</strong> I got down and dirty with HTML,
-                CSS, JS, and a touch of Photoshop magic to design this
-                responsive gem.
-              </li>
-              <li>
-                <strong>Key Features & Highlights:</strong> I designed a
-                production-ready template and played around with various
-                animations and styles to give it that extra flair.
-              </li>
-              <li>
-                <strong>Challenges & Solutions:</strong> Ran into a snag with
-                SVG files where the usual 'fill' trick wouldn't change the
-                color. But guess what? I tackled it by tweaking the layer
-                display in Photoshop.
-              </li>
-              <li>
-                <strong>Project Link & Code:</strong> Curious to see my
-                creation? Dive in and check out my template right here:
-                <a
-                  href="https://darecallad.github.io/responsiveWeb/"
-                  target="_blank"
-                  >www.darecallad.github.io/responsiveWeb/</a
-                >.
-              </li>
-              <li>
-                <strong>What I Learned:</strong> This project gave me a deeper
-                dive into how Photoshop can seamlessly blend with frontend
-                design. It's like they're two peas in a pod!
-              </li>
-            </ul>
-          </div>
-          <!-- Project 4 -->
-          <div class="project">
-            <img src="images/project4.png" alt="Project 4" />
-            <a
-              href="https://darecallad.github.io/scroll-animation/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Scroll Animation</h3>
-            </a>
-            <ul>
-              <li><strong>Project Name:</strong> Scroll Animation</li>
-              <li>
-                <strong>Description:</strong> Hey there! I took on this rad
-                challenge to craft a cool scroll animation using just HTML/CSS,
-                no JS allowed. Yep, you heard that right!
-              </li>
-              <li>
-                <strong>Tech & Tools:</strong> I rolled up my sleeves and dived
-                deep into HTML and CSS to bring this scroll animation to life.
-              </li>
-              <li>
-                <strong>Key Features & Highlights:</strong> The real
-                showstopper? Creating that scroll bar animation without a hint
-                of JS. Pure CSS magic!
-              </li>
-              <li>
-                <strong>Challenges & Solutions:</strong> Going the no-JS route
-                was a fresh experience, and yeah, it threw a few curveballs my
-                way. But with the trusty dev tool by my side, I pinpointed the
-                scroll bar's position to ensure the animation was on point.
-              </li>
-              <li>
-                <strong>Project Link & Code:</strong> Wanna see this in action?
-                Take a scroll (pun intended) over here:
-                <a
-                  href="https://darecallad.github.io/scroll-animation/"
-                  target="_blank"
-                  >www.darecallad.github.io/scroll-animation/</a
-                >.
-              </li>
-              <li>
-                <strong>What I Learned:</strong> Crafting snazzy CSS animations
-                without leaning on JS? Totally possible and totally awesome!
-              </li>
-            </ul>
-          </div>
-          <!-- Project 5 -->
-          <div class="project">
-            <img src="images/project2.png" alt="Project 2" />
-            <a
-              href="https://github.com/darecallad/NextJs13featureProject"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Next.js 13 Feature</h3>
-            </a>
-            <ul>
-              <li><strong>Project Name:</strong> Next.js 13 Feature</li>
-              <li>
-                <strong>Description:</strong> Hey there! I dived into the new
-                features of Next.js 13 by building a todo list. The main goal?
-                To put those shiny new Next.js 13 features to the test.
-              </li>
-              <li>
-                <strong>Tech & Tools:</strong> I geared up with the latest
-                version of Next.js 13, spiced things up with HTML, and styled it
-                all with TailwindCSS.
-              </li>
-              <li>
-                <strong>Key Features & Highlights:</strong> Next.js 13 really
-                stepped up its game with enhanced folder routing and those nifty
-                link features for page connections.
-              </li>
-              <li>
-                <strong>Challenges & Solutions:</strong> Hit a bit of a snag
-                when server-side JS didn't play nice with GitHub builds. But no
-                sweat! I switched gears and tested everything in a local
-                environment, and it worked like a charm.
-              </li>
-              <li>
-                <strong>Project Link & Code:</strong> Curious about the
-                nitty-gritty? Dive into my repo right here:
-                <a
-                  href="https://github.com/darecallad/NextJs13featureProject"
-                  target="_blank"
-                  >www.github.com/darecallad/NextJs13featureProject</a
-                >.
-              </li>
-              <li>
-                <strong>What I Learned:</strong> Got a firsthand look at all the
-                bells and whistles of Next.js 13. It's a game-changer, for sure!
-              </li>
-            </ul>
-          </div>
+    <!-- Nav -->
+    <section class="sticky-element">
+      <nav>
+        <div class="navbar">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#portfolio">PORTFOLIO</a>
+          <a href="#contact">CONTACT</a>
         </div>
-      </section>
-      <section class="features block" id="features">
-        <header class="block__header">
-          <h2>Features Testing</h2>
-        </header>
-        <div class="container grid grid--1x2">
-          <div class="feature">
-            <img src="images/feature1.png" alt="Feature 1" />
-            <a
-              href="https://github.com/darecallad/CSS-Anchor"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>CSS Anchor Feature</h3>
-            </a>
-            <ul>
-              <li><strong>Project Name:</strong> CSS Anchor Feature</li>
-              <li>
-                <strong>Description:</strong> Hey! I took a deep dive into the
-                fresh-out-the-oven feature of CSS - the Anchor Feature. Wanted
-                to see what all the buzz was about.
-              </li>
-              <li>
-                <strong>Tech & Tools:</strong> Kept it simple and sleek with
-                just HTML and CSS.
-              </li>
-              <li>
-                <strong>Key Features & Highlights:</strong> The main star of the
-                show? The Anchor Feature in CSS. It's a game-changer, and I was
-                all in for testing it out.
-              </li>
-              <li>
-                <strong>Project Link & Code:</strong> Wanna see the magic in
-                action? Check out my repo right here:
-                <a
-                  href="https://github.com/darecallad/CSS-Anchor"
-                  target="_blank"
-                  >www.github.com/darecallad/CSS-Anchor</a
-                >.
-              </li>
-              <li>
-                <strong>What I Learned:</strong> Got to play around with some
-                snazzy new CSS tricks. Always a treat to learn something new!
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-    <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <div class="contact-details">
-        <p>
-          Email:
-          <a href="mailto:darecallad0000@gmail.com">darecallad0000@gmail.com</a>
-        </p>
-        <p>
-          LinkedIn:
-          <a
-            href="https://www.linkedin.com/in/chung-an-johnson-chen/"
-            target="_blank"
-            >Chung An (Johnson) Chen</a
+      </nav>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>ABOUT</h2>
+      <div class="icons">
+        <div class="icon-item">
+          <img src="../docs/images/svg/fast.svg" alt="Fast" />
+          <p>Fast</p>
+          <span
+            >Fast load times and lag free interaction, my highest
+            priority.</span
           >
+        </div>
+        <div class="icon-item">
+          <img src="../docs/images/svg/responsive.svg" alt="Responsive" />
+          <p>Responsive</p>
+          <span>My layouts will work on any device, big or small.</span>
+        </div>
+
+        <div class="icon-item">
+          <img src="../docs/images/svg/intuitive.svg" alt="Intuitive" />
+          <p>Intuitive</p>
+          <span>Strong preference for easy to use, intuitive UX/UI.</span>
+        </div>
+        <div class="icon-item">
+          <img src="../docs/images/svg/dynamic.svg" alt="Dynamic" />
+          <p>Dynamic</p>
+          <span
+            >Websites don't have to be static, I love making pages come to
+            life.</span
+          >
+        </div>
+      </div>
+
+      <div class="profile">
+        <img
+          src="../docs/images/profile/12931120_997706413654277_9064571964294432753_n.jpg"
+          alt="Profile Picture"
+        />
+        <h3>Who's this guy?</h3>
+        <p>
+          I'm a Front-End Developer San Jose, CA. I have serious passion for UI
+          effects, animations and creating intuitive, dynamic user experiences.
+          Let's make something special.
         </p>
       </div>
+
+      <div class="skills">
+        <!-- Add your skills progress bars here -->
+      </div>
     </section>
+
+    <h1>前端作品集</h1>
+
+    <main>
+      <section class="portfolio">
+        <div class="portfolio-item">
+          <img src="../docs/images/sunnychildcare.png" alt="作品1" />
+          <div class="hover-content">
+            <h3>作品1</h3>
+            <p>作品1的描述</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="../docs//images/project1.png" alt="作品2" />
+          <div class="hover-content">
+            <h3>作品2</h3>
+            <p>作品2的描述</p>
+          </div>
+        </div>
+        <!-- 您可以根據需要添加更多的作品項目 -->
+      </section>
+    </main>
+
     <footer>
-      <p>&copy; 2023 ChungAn Chen. All rights reserved.</p>
+      <p>
+        © 2023 前端作品集 | 聯絡方式: Phone / email / <a href="#">LinkedIn</a>
+      </p>
     </footer>
   </body>
+  <script src="js/main.js"></script>
 </html>
