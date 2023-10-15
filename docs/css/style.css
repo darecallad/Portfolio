@@ -201,7 +201,7 @@ footer p {
 
 /* About */
 .about {
-  height: auto;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,6 +218,14 @@ footer p {
 @media screen and (min-width: 768px) {
   .about {
     padding: 0;
+    position: relative;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    padding-bottom: 5rem;
   }
 }
 
@@ -239,6 +247,7 @@ footer p {
 @media screen and (min-width: 768px) {
   .icons {
     flex-wrap: nowrap;
+    gap: 40px;
   }
 }
 
@@ -292,6 +301,30 @@ footer p {
   font-size: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .profile h3 {
+    font-size: 25px;
+  }
+  .profile p {
+    font-size: 15px;
+  }
+}
+
+.profile_link {
+  text-decoration: none;
+  font-size: 10px;
+  color: #4caf50;
+}
+
+@media screen and (min-width: 768px) {
+  .profile_link {
+    font-size: 15px;
+  }
+}
+.profile_link:hover {
+  text-decoration: underline;
+}
+
 .profile_textcontainer {
   margin-top: 10px;
 }
@@ -301,7 +334,13 @@ footer p {
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .skills {
+    margin-bottom: 0;
+  }
 }
 
 .skill {
@@ -347,5 +386,15 @@ footer p {
 @media screen and (min-width: 768px) {
   .progress-bar span {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about_article {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
   }
 }
