@@ -100,10 +100,21 @@ nav a:hover {
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+.hover-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-info p {
+  color: rgb(236, 41, 106);
 }
 
 .portfolio-item img {
@@ -121,6 +132,21 @@ nav a:hover {
 
 .portfolio-item:hover .hover-content {
   opacity: 1;
+}
+
+.portfolio_link {
+  text-decoration: none;
+  background: #fff;
+  font-size: 20px;
+  padding: 7px 15px;
+  border: 1px solid rgb(236, 41, 106);
+  transition: color 0.3s;
+  color: rgb(236, 41, 106);
+}
+
+.portfolio_link:hover {
+  background-color: rgb(236, 41, 106);
+  color: #fff;
 }
 
 footer {
