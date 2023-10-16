@@ -88,3 +88,31 @@ document.addEventListener("scroll", function () {
       .classList.add("active");
   }
 });
+
+// for modal
+
+var modal = document.getElementById("modal");
+var modalImg = document.getElementById("modal-img");
+var images = ["../docs/images/sunnychildcare.png", "...other images..."];
+var currentImageIndex = 0;
+
+document
+  .querySelector(".portfolio_link")
+  .addEventListener("click", function () {
+    modal.style.display = "flex";
+    modalImg.src = images[currentImageIndex];
+  });
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  modalImg.src = images[currentImageIndex];
+}
+
+function prevImage() {
+  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+  modalImg.src = images[currentImageIndex];
+}

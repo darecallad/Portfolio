@@ -168,6 +168,144 @@ nav a:hover {
   color: #fff;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-content {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-content {
+    max-width: 800px;
+  }
+}
+
+.close-btn,
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 5px 25px;
+  font-weight: bold;
+  font-size: 36px;
+  user-select: none;
+  z-index: 2;
+}
+
+.close-btn {
+  right: 0;
+  top: 10px;
+  color: white;
+}
+
+.next {
+  right: 0;
+  background-color: #5b595a;
+  color: #fff;
+  font-weight: bold;
+}
+
+.prev {
+  left: 0;
+  background-color: #5b595a;
+  color: #fff;
+  font-weight: bold;
+}
+
+.modal-caption {
+  margin-top: 3px;
+  padding: 16px 0;
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+}
+
+.modal-caption h3,
+.modal-caption span,
+.modal-caption p {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.modal-caption h3 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.modal-caption p {
+  padding-top: 10px;
+  padding-right: 60px;
+}
+
+.modal-caption span {
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.modal-caption span::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  bottom: -10px;
+  width: 550px;
+  height: 0.5px;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-caption {
+    max-width: 800px;
+  }
+  .modal-caption span::after {
+    width: 750px;
+  }
+}
+
+.view-site-btn {
+  text-align: center;
+  width: 15%;
+  display: block;
+  margin-left: 20px;
+  background-color: rgb(236, 41, 106);
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.3s all;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.view-site-btn:hover {
+  background-color: #fff;
+  color: rgb(236, 41, 106);
+}
+
+@media screen and (min-width: 768px) {
+  .view-site-btn {
+    font-size: 15px;
+  }
+}
+
 footer {
   background-color: rgb(39, 70, 111);
   color: #fff;
