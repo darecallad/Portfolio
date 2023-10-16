@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../docs/css/normalize.css" />
     <link rel="stylesheet" href="../docs/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Chung An's Portfolio</title>
   </head>
 
@@ -172,10 +173,13 @@
 
     <main>
       <h1>PROJECTS</h1>
-      <section class="portfolio">
+      <section class="portfolio" data-aos="fade-left">
         <!-- 1 -->
         <div class="portfolio-item">
-          <img src="../docs/images/sunnychildcare.png" alt="Project1" />
+          <img
+            src="../docs/images/projects/sunnychildcare/sunnychildcare.png"
+            alt="Project-SunnyChildCare"
+          />
           <div class="hover-content">
             <div class="hover-info">
               <h3>Sunny Child Care</h3>
@@ -185,7 +189,7 @@
           </div>
         </div>
         <!-- Modal -->
-        <div class="modal" id="modal">
+        <div class="modal">
           <span class="close-btn" onclick="closeModal()">&times;</span>
           <button class="prev" onclick="prevImage()">‹</button>
           <img class="modal-content" id="modal-img" />
@@ -198,29 +202,212 @@
               center that assists busy parents in taking care of their young
               children.
             </p>
-            <a href="#" class="view-site-btn">VIEW SITE</a>
+            <a
+              target="_blank"
+              href="https://www.sunnychildcare.com"
+              class="view-site-btn"
+              >VIEW SITE</a
+            >
           </div>
         </div>
-
         <!-- 2 -->
         <div class="portfolio-item">
-          <img src="../docs//images/project1.png" alt="Project2" />
+          <img
+            src="../docs/images/projects/sunnychildcareAdmission/sunnychildcareAdmission.png"
+            alt="Project-SunnyChildCare"
+          />
           <div class="hover-content">
             <div class="hover-info">
-              <h3>Cloud Production Demo</h3>
-              <p>HTML/CSS/JS</p>
+              <h3>Daycare Admission Form</h3>
+              <p>React.js/Node.js</p>
             </div>
-            <a href="#" class="portfolio_link">Learn More</a>
+            <button class="portfolio_link">Learn More</button>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <button class="prev" onclick="prevImage()">‹</button>
+          <img class="modal-content" id="modal-img" />
+          <button class="next" onclick="nextImage()">›</button>
+          <div class="modal-caption">
+            <h3>Admission Form</h3>
+            <span>ADMISSION DETAILS FORM.</span>
+            <p>
+              Sunnychildcare's admission form is used to help parents register
+              for a tour.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.sunnychildcare.com/admission/tuition"
+              class="view-site-btn"
+              >VIEW SITE</a
+            >
+          </div>
+        </div>
+        <!-- 3 -->
         <div class="portfolio-item">
-          <img src="../docs//images/project2.png" alt="Project3" />
+          <img src="../docs/images/projects/rawg/rawg.png" alt="rawg-io" />
           <div class="hover-content">
             <div class="hover-info">
-              <h3>Cloud Production Demo</h3>
-              <p>HTML/CSS/JS</p>
+              <h3>Rawg.io</h3>
+              <p>React.js/TypeScript/Vite</p>
             </div>
-            <a href="#" class="portfolio_link">Learn More</a>
+            <button class="portfolio_link">Learn More</button>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <button class="prev" onclick="prevImage()">‹</button>
+          <img class="modal-content" id="modal-img" />
+          <button class="next" onclick="nextImage()">›</button>
+          <div class="modal-caption">
+            <h3>Rawg.io Replica</h3>
+            <span>POPPULAR GAME PLATFORM.</span>
+            <p>
+              Rawg.io is a popular gaming platform, offering a wealth of gaming
+              resources.
+            </p>
+            <a
+              target="_blank"
+              href="https://game-hub-seven-tau.vercel.app/"
+              class="view-site-btn"
+              >VIEW SITE</a
+            >
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="portfolio-item">
+          <img src="../docs/images/projects/cloud/cloud.png" alt="cloud" />
+          <div class="hover-content">
+            <div class="hover-info">
+              <h3>Cloud Serve Demo</h3>
+              <p>HTML/CSS/JaveScript</p>
+            </div>
+            <button class="portfolio_link">Learn More</button>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <button class="prev" onclick="prevImage()">‹</button>
+          <img class="modal-content" id="modal-img" />
+          <button class="next" onclick="nextImage()">›</button>
+          <div class="modal-caption">
+            <h3>Cloud Serve Demo</h3>
+            <span>RESPONSIVE WEB PAGE.</span>
+            <p>
+              Hey! I whipped up this design template for a responsive web page.
+              The cool part? I used the principles of OOP to craft this beauty.
+            </p>
+            <a
+              target="_blank"
+              href="https://darecallad.github.io/responsiveProject1/"
+              class="view-site-btn"
+              >VIEW SITE</a
+            >
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="portfolio-item">
+          <img src="../docs/images/projects/lts/lts.png" alt="ltvideo" />
+          <div class="hover-content">
+            <div class="hover-info">
+              <h3>LT Video Solutions</h3>
+              <p>HTML/CSS/JaveScript</p>
+            </div>
+            <button class="portfolio_link">Learn More</button>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <button class="prev" onclick="prevImage()">‹</button>
+          <img class="modal-content" id="modal-img" />
+          <button class="next" onclick="nextImage()">›</button>
+          <div class="modal-caption">
+            <h3>LT Video Solutions</h3>
+            <span>ONE OF BEST VIDEO SOLUTION COMPANY.</span>
+            <p>
+              The well-known Video Solutions brand is best-selling nationwide.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.ltsecurityinc.com/"
+              class="view-site-btn"
+              >VIEW SITE</a
+            >
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="portfolio-item">
+          <img
+            src="../docs/images/projects/production/production.png"
+            alt="production"
+          />
+          <div class="hover-content">
+            <div class="hover-info">
+              <h3>Production Demo</h3>
+              <p>HTML/CSS/JaveScript</p>
+            </div>
+            <button class="portfolio_link">Learn More</button>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal" id="modal-2">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <button class="prev" onclick="prevImage()">‹</button>
+          <img class="modal-content" id="modal-img" />
+          <button class="next" onclick="nextImage()">›</button>
+          <div class="modal-caption">
+            <h3>Production Demo</h3>
+            <span>SIMPLE PRODUCTION DEMO DESIGN.</span>
+            <p>
+              Responsive Production Demo Design. To showcase a clean and tidy
+              style that's easy on the eyes.
+            </p>
+            <a
+              target="_blank"
+              href="https://darecallad.github.io/responsiveWeb/"
+              class="view-site-btn"
+              >VIEW SITE</a
+            >
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="portfolio-item">
+          <img
+            src="../docs/images/projects/scrollanimation/scrollanimation.png"
+            alt="production"
+          />
+          <div class="hover-content">
+            <div class="hover-info">
+              <h3>Scroll Animation ShowCase</h3>
+              <p>HTML/CSS</p>
+            </div>
+            <button class="portfolio_link">Learn More</button>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal" id="modal-2">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <button class="prev" onclick="prevImage()">‹</button>
+          <img class="modal-content" id="modal-img" />
+          <button class="next" onclick="nextImage()">›</button>
+          <div class="modal-caption">
+            <h3>Scroll Animation ShowCase</h3>
+            <span>DESIGN ANIMATION WITHOUT USING JAVASCRIPT.</span>
+            <p>
+              I took on this rad challenge to craft a cool scroll animation
+              using just HTML/CSS, no JS allowed
+            </p>
+            <a
+              target="_blank"
+              href="https://darecallad.github.io/scroll-animation/"
+              class="view-site-btn"
+              >VIEW SITE</a
+            >
           </div>
         </div>
       </section>
@@ -233,4 +420,8 @@
     </footer>
   </body>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

@@ -53,6 +53,7 @@ let isSticky = false;
 window.addEventListener("scroll", function () {
   if (window.scrollY > 100 && !isSticky) {
     stickyElement.style.position = "sticky";
+    stickyElement.style.zIndex = "1";
     stickyElement.style.top = "0";
     isSticky = true;
   } else if (window.scrollY <= 100 && isSticky) {
@@ -91,28 +92,84 @@ document.addEventListener("scroll", function () {
 
 // for modal
 
-var modal = document.getElementById("modal");
-var modalImg = document.getElementById("modal-img");
-var images = ["../docs/images/sunnychildcare.png", "...other images..."];
-var currentImageIndex = 0;
+var modals = document.querySelectorAll(".modal");
+var modalImgs = document.querySelectorAll(".modal-content");
+var portfolioLinks = document.querySelectorAll(".portfolio_link");
+var closeButtons = document.querySelectorAll(".close-btn");
+var nextButtons = document.querySelectorAll(".next");
+var prevButtons = document.querySelectorAll(".prev");
 
-document
-  .querySelector(".portfolio_link")
-  .addEventListener("click", function () {
-    modal.style.display = "flex";
-    modalImg.src = images[currentImageIndex];
+var imageSets = [
+  [
+    "../docs/images/projects/sunnychildcare/sunnychildcare.png",
+    "../docs/images/projects/sunnychildcare/sunnychildcare1.png",
+    "../docs/images/projects/sunnychildcare/sunnychildcare2.png",
+    "../docs/images/projects/sunnychildcare/sunnychildcare3.png",
+    "../docs/images/projects/sunnychildcare/sunnychildcare4.png",
+    "../docs/images/projects/sunnychildcare/sunnychildcare5.png",
+    "../docs/images/projects/sunnychildcare/sunnychildcare6.png",
+  ],
+  [
+    "../docs/images/projects/sunnychildcareAdmission/sunnychildcareAdmission.png",
+    "../docs/images/projects/sunnychildcareAdmission/sunnychildcareAdmission1.png",
+    "../docs/images/projects/sunnychildcareAdmission/sunnychildcareAdmission2.png",
+  ],
+  [
+    "../docs/images/projects/rawg/rawg.png",
+    "../docs/images/projects/rawg/rawg1.png",
+    "../docs/images/projects/rawg/rawg2.png",
+    "../docs/images/projects/rawg/rawg3.png",
+    "../docs/images/projects/rawg/rawg4.png",
+  ],
+  [
+    "../docs/images/projects/cloud/cloud.png",
+    "../docs/images/projects/cloud/cloud1.png",
+    "../docs/images/projects/cloud/cloud2.png",
+    "../docs/images/projects/cloud/cloud3.png",
+  ],
+  [
+    "../docs/images/projects/lts/lts.png",
+    "../docs/images/projects/lts/lts1.png",
+    "../docs/images/projects/lts/lts2.png",
+  ],
+  ["../docs/images/projects/production/production.png"],
+  [
+    "../docs/images/projects/scrollanimation/scrollanimation.png",
+    "../docs/images/projects/scrollanimation/scrollanimation1.png",
+    "../docs/images/projects/scrollanimation/scrollanimation2.png",
+    "../docs/images/projects/scrollanimation/scrollanimation3.png",
+  ],
+];
+
+var currentImageIndices = Array(imageSets.length).fill(0);
+
+portfolioLinks.forEach((link, index) => {
+  link.addEventListener("click", function () {
+    currentImageIndices[index] = 0;
+    modals[index].style.display = "flex";
+    modalImgs[index].src = imageSets[index][currentImageIndices[index]];
   });
+});
 
-function closeModal() {
-  modal.style.display = "none";
-}
+closeButtons.forEach((btn, index) => {
+  btn.addEventListener("click", function () {
+    modals[index].style.display = "none";
+  });
+});
 
-function nextImage() {
-  currentImageIndex = (currentImageIndex + 1) % images.length;
-  modalImg.src = images[currentImageIndex];
-}
+nextButtons.forEach((btn, index) => {
+  btn.addEventListener("click", function () {
+    currentImageIndices[index] =
+      (currentImageIndices[index] + 1) % imageSets[index].length;
+    modalImgs[index].src = imageSets[index][currentImageIndices[index]];
+  });
+});
 
-function prevImage() {
-  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-  modalImg.src = images[currentImageIndex];
-}
+prevButtons.forEach((btn, index) => {
+  btn.addEventListener("click", function () {
+    currentImageIndices[index] =
+      (currentImageIndices[index] - 1 + imageSets[index].length) %
+      imageSets[index].length;
+    modalImgs[index].src = imageSets[index][currentImageIndices[index]];
+  });
+});
