@@ -53,7 +53,7 @@ let isSticky = false;
 window.addEventListener("scroll", function () {
   if (window.scrollY > 100 && !isSticky) {
     stickyElement.style.position = "sticky";
-    stickyElement.style.zIndex = "1";
+    stickyElement.style.zIndex = "";
     stickyElement.style.top = "0";
     isSticky = true;
   } else if (window.scrollY <= 100 && isSticky) {
@@ -101,43 +101,43 @@ var prevButtons = document.querySelectorAll(".prev");
 
 var imageSets = [
   [
-    "../docs/images/projects/sunnychildcare/sunnychildcare.png",
-    "../docs/images/projects/sunnychildcare/sunnychildcare1.png",
-    "../docs/images/projects/sunnychildcare/sunnychildcare2.png",
-    "../docs/images/projects/sunnychildcare/sunnychildcare3.png",
-    "../docs/images/projects/sunnychildcare/sunnychildcare4.png",
-    "../docs/images/projects/sunnychildcare/sunnychildcare5.png",
-    "../docs/images/projects/sunnychildcare/sunnychildcare6.png",
+    "images/projects/sunnychildcare/sunnychildcare.png",
+    "images/projects/sunnychildcare/sunnychildcare1.png",
+    "images/projects/sunnychildcare/sunnychildcare2.png",
+    "images/projects/sunnychildcare/sunnychildcare3.png",
+    "images/projects/sunnychildcare/sunnychildcare4.png",
+    "images/projects/sunnychildcare/sunnychildcare5.png",
+    "images/projects/sunnychildcare/sunnychildcare6.png",
   ],
   [
-    "../docs/images/projects/sunnychildcareAdmission/sunnychildcareAdmission.png",
-    "../docs/images/projects/sunnychildcareAdmission/sunnychildcareAdmission1.png",
-    "../docs/images/projects/sunnychildcareAdmission/sunnychildcareAdmission2.png",
+    "images/projects/sunnychildcareAdmission/sunnychildcareAdmission.png",
+    "images/projects/sunnychildcareAdmission/sunnychildcareAdmission1.png",
+    "images/projects/sunnychildcareAdmission/sunnychildcareAdmission2.png",
   ],
   [
-    "../docs/images/projects/rawg/rawg.png",
-    "../docs/images/projects/rawg/rawg1.png",
-    "../docs/images/projects/rawg/rawg2.png",
-    "../docs/images/projects/rawg/rawg3.png",
-    "../docs/images/projects/rawg/rawg4.png",
+    "images/projects/rawg/rawg.png",
+    "images/projects/rawg/rawg1.png",
+    "images/projects/rawg/rawg2.png",
+    "images/projects/rawg/rawg3.png",
+    "images/projects/rawg/rawg4.png",
   ],
   [
-    "../docs/images/projects/cloud/cloud.png",
-    "../docs/images/projects/cloud/cloud1.png",
-    "../docs/images/projects/cloud/cloud2.png",
-    "../docs/images/projects/cloud/cloud3.png",
+    "images/projects/cloud/cloud.png",
+    "images/projects/cloud/cloud1.png",
+    "images/projects/cloud/cloud2.png",
+    "images/projects/cloud/cloud3.png",
   ],
   [
-    "../docs/images/projects/lts/lts.png",
-    "../docs/images/projects/lts/lts1.png",
-    "../docs/images/projects/lts/lts2.png",
+    "images/projects/lts/lts.png",
+    "images/projects/lts/lts1.png",
+    "images/projects/lts/lts2.png",
   ],
-  ["../docs/images/projects/production/production.png"],
+  ["images/projects/production/production.png"],
   [
-    "../docs/images/projects/scrollanimation/scrollanimation.png",
-    "../docs/images/projects/scrollanimation/scrollanimation1.png",
-    "../docs/images/projects/scrollanimation/scrollanimation2.png",
-    "../docs/images/projects/scrollanimation/scrollanimation3.png",
+    "images/projects/scrollanimation/scrollanimation.png",
+    "images/projects/scrollanimation/scrollanimation1.png",
+    "images/projects/scrollanimation/scrollanimation2.png",
+    "images/projects/scrollanimation/scrollanimation3.png",
   ],
 ];
 
