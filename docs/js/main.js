@@ -53,7 +53,7 @@ let isSticky = false;
 window.addEventListener("scroll", function () {
   if (window.scrollY > 100 && !isSticky) {
     stickyElement.style.position = "sticky";
-    stickyElement.style.zIndex = "";
+    stickyElement.style.zIndex = "1";
     stickyElement.style.top = "0";
     isSticky = true;
   } else if (window.scrollY <= 100 && isSticky) {
