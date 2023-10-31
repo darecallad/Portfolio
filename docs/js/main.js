@@ -110,13 +110,10 @@ var imageSets = [
     "images/projects/sunnychildcare/sunnychildcare6.png",
   ],
   [
-    "images/projects/sunnychildcareAdmission/sunnychildcareAdmission.png",
-    "images/projects/sunnychildcareAdmission/sunnychildcareAdmission1.png",
-    "images/projects/sunnychildcareAdmission/sunnychildcareAdmission2.png",
-  ],
-  [
     "images/projects/rawg/rawg.png",
+    "images/projects/rawg/rawg5.png",
     "images/projects/rawg/rawg1.png",
+    "images/projects/rawg/rawg6.png",
     "images/projects/rawg/rawg2.png",
     "images/projects/rawg/rawg3.png",
     "images/projects/rawg/rawg4.png",
