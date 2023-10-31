@@ -202,6 +202,7 @@ nav a:hover {
   font-size: 36px;
   user-select: none;
   z-index: 3;
+  border: none;
 }
 
 .close-btn {
